@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+
+
+.p-menu .p-menuitem .p-menuitem-text{
+    border-radius: 10px;
+}
+
+
+.gridPanel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+@layer components {
+    .MymenuItem {
+        @apply min-w-0 border-2 border-slate-100 rounded-sm bg-gray-400 p-4 shadow-md;
+    }
+    .MydropDown {
+        @apply text-cyan-950 w-32 p-1 rounded
+    }
+    
+
+}
+
+.searchBtn {
+    border: solid 1px rgb(4, 191, 85);
+    padding: 2px;
+    float: right;
+  }
